@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="journal.css">
+   
+</head>
+<body>
+    
+    <h1>DAILY JOURNAL</h1>
+    <!-- journal date -->
+    <form action="">
+        <fieldset>
+        <label for="journalDate">Date of entry</label>
+        <input type="date"name="journalDate"id="journalDate">
+        </fieldset>
+
+<!-- concepts covered -->
+
+<fieldset>
+        <label for="conceptsCovered">Concepts Covered</label>
+        <input type="conceptsCovered"name="conceptsCovered"id="conceptsCovered">
+        </fieldset>
+
+        <!-- journal entry -->
+        <fieldset>
+                <label for="journalEntry">Journal Entry</label>
+               <textarea name="journalEntry" id="journalEntry" cols="30" rows="10"></textarea>
+                </fieldset>
+
+                <!-- mood -->
+                <fieldset>
+                        <label for="moodForTheDay">Mood for the day</label>
+                      <select name="moodForTheDay" id="moodForTheDay">
+                          <option value="Frustrated">Frustrated</option>
+                          <option value="Bamboozled">Bamboozled</option>
+                          <option value="Happy">Happy</option>
+                          <option value="Sad">Sad</option>
+                          <option value="Confident">Confident</option>
+                      </select>
+                        </fieldset>
+                        
+    </form>
+
+    <br>
+    <!-- submit button -->
+    <button type="submit" id="submitbutton">Record Journal Entry</button>
+    <article class="entryLog">
+
+    </article>
+        <script src ="journal.js">
+    </script>
+</body>
+</html>

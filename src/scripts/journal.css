@@ -1,0 +1,21 @@
+body{
+    background-color:darkblue;
+    font-weight: bold;
+    color:yellow
+}
+fieldset{
+    background-color:lightblue;
+    color:green
+}
+
+h1{
+    color:yellow;
+    text-align: center;
+    text-decoration: underline;
+}
+button{
+    background-color:yellow;
+    font-weight:bold;
+    width: 90px;
+    height:60px;
+}
