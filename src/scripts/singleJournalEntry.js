@@ -1,3 +1,4 @@
+
 const makeJournalEntryComponent = {
 buildJournalEntryCard: (singleJournalObject) => {
     return `
@@ -10,3 +11,5 @@ buildJournalEntryCard: (singleJournalObject) => {
     `
 }
 }
+export default makeJournalEntryComponent;
+

@@ -55,4 +55,17 @@
 // renderJournalEntries(journalEntry);
 
 // });
+
+
+
+import apiEntries from "./apiManager.js"
+ 
+import renderJournalEntries from "./DOMPrinter.js"
+
+// apiEntries.getAllEntries()
 apiEntries.getAllEntries()
+.then(parsedJournalEntries => {
+  // When they come back from the API, print them
+  renderJournalEntries(parsedJournalEntries)
+});
+
