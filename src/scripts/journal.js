@@ -17,18 +17,7 @@
 // //     .then(foods => foods.json())
 // //     .then(parsedFoods => {
 
-//  const entrylogcontainer = document.querySelector("body")
 
-//  entrylogcontainer.querySelector("#submitbutton").addEventListener("click", function() {
-
-
-//      const journaldate = document.querySelector("#journalDate").value
-
-//     const conceptscovered = document.querySelector("#conceptsCovered").value
-
-//     const journalentry = document.querySelector("#journalEntry").value
-
-//     const mood = document.querySelector("#moodForTheDay").value
 
 //    const finallog =
 //      entrylogcontainer.innerHTML += `
@@ -56,6 +45,12 @@
 
 // });
 
+// const entrylogcontainer = document.querySelector("body")
+
+// entrylogcontainer.querySelector("#submitbutton").addEventListener("click", function() {
+
+
+
 
 
 import apiEntries from "./apiManager.js"
@@ -68,4 +63,27 @@ apiEntries.getAllEntries()
   // When they come back from the API, print them
   renderJournalEntries(parsedJournalEntries)
 });
+
+const journalSubmitButton= document.querySelector("#submitbutton")
+
+journalSubmitButton.addEventListener("click",function(){
+ const journalvalues={
+  journaldate: document.querySelector("#journalDate").value,
+
+  conceptscovered:  document.querySelector("#conceptsCovered").value,
+
+  journalentry: document.querySelector("#journalEntry").value,
+
+  mood: document.querySelector("#moodForTheDay").value,
+ }
+// Use `fetch` with the POST method to add your entry to your API
+fetch("http://localhost:3000/entries", { // Replace "url" with your API's URL
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(journalvalues)
+
+})
+})
 

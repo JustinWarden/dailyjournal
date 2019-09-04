@@ -1,9 +1,67 @@
 {
- "entries":   [{    
-"date": " 8/14/19",
-"concepts": " javascript",
-"text": " it fried my brain ",
-"mood": " happy "
-}
-]
+  "entries": [
+    {
+      "id": 1,
+      "date": " 8/14/19",
+      "concepts": " javascript",
+      "text": " it fried my brain ",
+      "mood": " happy "
+    },
+    {
+      "journaldate": "0888-08-08",
+      "conceptscovered": "click events",
+      "journalentry": "hello it was fun",
+      "mood": "Frustrated",
+      "id": 2
+    },
+    {
+      "journaldate": "1982-09-05",
+      "conceptscovered": "my birthday",
+      "journalentry": "YAY ITS MY BIRTHDAY!!!",
+      "mood": "Happy",
+      "id": 3
+    },
+    {
+      "journaldate": "1982-09-05",
+      "conceptscovered": "my birthday",
+      "journalentry": "YAY ITS MY BIRTHDAY!!!",
+      "mood": "Happy",
+      "id": 4
+    },
+    {
+      "journaldate": "1982-09-05",
+      "conceptscovered": "MY BIRTHDAY",
+      "journalentry": "YAY ITS MY BIRTHDAY",
+      "mood": "Happy",
+      "id": 5
+    },
+    {
+      "journaldate": "1982-09-05",
+      "conceptscovered": "MY BIRTHDAY",
+      "journalentry": "YAY ITS MY BIRTHDAY",
+      "mood": "Happy",
+      "id": 6
+    },
+    {
+      "journaldate": "",
+      "conceptscovered": "click events",
+      "journalentry": "SDSDFDSDSFFD",
+      "mood": "Frustrated",
+      "id": 7
+    },
+    {
+      "journaldate": "1982-09-05",
+      "conceptscovered": "MY BIRTHDAY",
+      "journalentry": "YAY ITS MY BIRTHDAY",
+      "mood": "Happy",
+      "id": 8
+    },
+    {
+      "journaldate": "1982-09-05",
+      "conceptscovered": "MY BIRTHDAY",
+      "journalentry": "YAY ITS MY BIRTHDAY",
+      "mood": "Happy",
+      "id": 9
+    }
+  ]
 }
