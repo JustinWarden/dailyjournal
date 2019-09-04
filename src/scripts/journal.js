@@ -64,18 +64,29 @@ apiEntries.getAllEntries()
   renderJournalEntries(parsedJournalEntries)
 });
 
+// const printJournalToDOM = (journalvalues) => {
+//       document.querySelector("#entryLog").innerHTML += 
+//       `<p>${entries.journaldate}</p>`
+//   }
+
+
 const journalSubmitButton= document.querySelector("#submitbutton")
 
+
 journalSubmitButton.addEventListener("click",function(){
+
  const journalvalues={
-  journaldate: document.querySelector("#journalDate").value,
 
-  conceptscovered:  document.querySelector("#conceptsCovered").value,
+  date: document.querySelector("#journalDate").value,
 
-  journalentry: document.querySelector("#journalEntry").value,
+  concepts:  document.querySelector("#conceptsCovered").value,
+
+  text: document.querySelector("#journalEntry").value,
 
   mood: document.querySelector("#moodForTheDay").value,
  }
+
+//  console.log(journalvalues.journaldate)
 // Use `fetch` with the POST method to add your entry to your API
 fetch("http://localhost:3000/entries", { // Replace "url" with your API's URL
     method: "POST",
@@ -84,6 +95,23 @@ fetch("http://localhost:3000/entries", { // Replace "url" with your API's URL
     },
     body: JSON.stringify(journalvalues)
 
-})
+  }).then(() => {
+      // Once the lego has been posted, GET all of the legos from the database
+      fetch('http://localhost:3000/entries')
+      .then(response => response.json())
+      .then(parsedjournals => {
+       (parsedjournals)
+      })
+   })
+
 })
 
+
+
+// .then(() => {
+//   // When the POST is complete, we need to refresh the page. GET all of the students, including the new one.
+//   fetch("http://localhost:8088/students")
+//   .then(response => response.json())
+//   .then(parsedStudents => {
+//       // Once the students have come back, print them to the DOM
+//       printStudentsToDOM(parsedStudents)
