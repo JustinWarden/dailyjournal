@@ -1,6 +1,6 @@
 import makeJournalEntryComponent from "./singleJournalEntry.js"
 
-
+// PRINTS JOURNALS TO THE DOM
 
 const renderJournalEntries = (entries) =>{
     let journalEntries = ""

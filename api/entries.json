@@ -1,60 +1,18 @@
 {
   "entries": [
     {
-      "id": 1,
-      "date": " 8/14/19",
-      "concepts": " javascript",
-      "text": " it fried my brain ",
-      "mood": " happy "
-    },
-    {
-      "date": "",
-      "concepts": "heheheheheheh",
-      "text": "4444444444444444444444444444444444444444444444",
-      "mood": "Frustrated",
-      "id": 2
-    },
-    {
-      "date": "",
-      "concepts": "",
-      "text": "666666666666666666666666666666666666666666",
-      "mood": "Frustrated",
-      "id": 3
-    },
-    {
-      "date": "",
-      "concepts": "666666666666666666",
-      "text": "44444444444444444444444444444444444",
-      "mood": "Frustrated",
-      "id": 4
-    },
-    {
-      "date": "",
-      "concepts": "666666666666666666",
-      "text": "44444444444444444444444444444444444",
-      "mood": "Frustrated",
-      "id": 5
-    },
-    {
-      "date": "",
-      "concepts": "666666666666666666",
-      "text": "44444444444444444444444444444444444",
-      "mood": "Frustrated",
-      "id": 6
-    },
-    {
-      "date": "",
-      "concepts": "33333333333333333333333333",
-      "text": "777777777777777777777777777777777777777777777",
+      "date": "1982-09-05",
+      "concepts": "ITS MY BIRTHDAY",
+      "text": "YAYAYAYAYAYAYAY",
       "mood": "Happy",
-      "id": 7
+      "id": 15
     },
     {
-      "date": "",
-      "concepts": "",
-      "text": "hhdhdhdhdhdhdhdhd",
-      "mood": "Bamboozled",
-      "id": 8
+      "date": "2019-09-06",
+      "concepts": "COMMENTING JOURNAL",
+      "text": "IT IS GOOD TO COMMENT ON YOUR\nCODE.  IT WILL MAKE YOU FEEL VERY HAPPY INSIDE.",
+      "mood": "Happy",
+      "id": 16
     }
   ]
 }

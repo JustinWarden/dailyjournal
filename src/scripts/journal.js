@@ -3,13 +3,15 @@ import apiEntries from "./apiManager.js"
  
 import renderJournalEntries from "./DOMPrinter.js"
 
-// apiEntries.getAllEntries()
+
+
 apiEntries.getAllEntries()
 .then(parsedJournalEntries => {
   // When they come back from the API, print them
   renderJournalEntries(parsedJournalEntries)
 });
 
+// EVENT LISTENER FOR THE SUBMIT BUTTON
 
 const journalSubmitButton= document.querySelector("#submitbutton")
 
@@ -27,8 +29,9 @@ journalSubmitButton.addEventListener("click",function(){
   mood: document.querySelector("#moodForTheDay").value,
  }
 
-// Use `fetch` with the POST method to add your entry to your API
-fetch("http://localhost:3000/entries", { // Replace "url" with your API's URL
+//  POST method to add your entry to your API
+
+fetch("http://localhost:3000/entries", { 
     method: "POST",
     headers: {
         "Content-Type": "application/json"
@@ -43,5 +46,25 @@ fetch("http://localhost:3000/entries", { // Replace "url" with your API's URL
       })
     })
    })
-   
-  
+
+  //  EVENT LISTENER TO DELETE JOURNAL
+document.querySelector("body").addEventListener("click", () => {
+
+// WILL FIND THE ID OF THE JOURNAL TO DELETE
+
+    if (event.target.id.includes("delete-journal")) {
+
+        const journaltodelete = event.target.id.split("-");
+        const idofjournaltodelete = journaltodelete[2]
+
+        // console.log(idofjournaltodelete)
+// WILL UPDATE THE NEW JOURNAL LIST 
+
+        apiEntries.deletejournal(idofjournaltodelete).then(() => {
+            apiEntries.getAllEntries()
+                .then(parsedjournals => {
+                    renderJournalEntries(parsedjournals);
+                });
+        })
+    }
+})
